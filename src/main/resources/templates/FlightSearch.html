@@ -34,11 +34,13 @@
         <th>Departure Time</th>
         <th>Arrival Time</th>
         <th>Estimated Cost</th>
+        <th>Class</th>
         <tr th:each="result:${results}">
            <td th:text="${result.flight.number}"></td>
            <td th:text="${result.flight.source}"></td>
            <td th:text="${result.flight.destination}"></td>
            <td th:text="${result.flight.departureTime.getTime()}"></td>
+            <td th:text="${result.flight.getClassType()}"></td>
            <td th:text="${result.flight.arrivalTime.getTime()}"></td>
             <td th:text="${result.totalCost}"></td>
         </tr>
