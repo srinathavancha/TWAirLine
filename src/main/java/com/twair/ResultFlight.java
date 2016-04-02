@@ -16,7 +16,8 @@ public class ResultFlight {
     }
 
     public double calculateCost() {
-        return numberOfSeats * flight.getTravelClassForAClassType(classType).getCostPerSeat();
+        totalCost = numberOfSeats * flight.getTravelClassForAClassType(classType).getCostPerSeat();
+        return totalCost;
     }
 
     public double getTotalCost() {
