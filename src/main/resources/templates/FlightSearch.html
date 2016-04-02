@@ -40,7 +40,7 @@
            <td th:text="${result.flight.source}"></td>
            <td th:text="${result.flight.destination}"></td>
            <td th:text="${result.flight.departureTime.getTime()}"></td>
-            <td th:text="${result.flight.getClassType()}"></td>
+            <td th:text="${result.classType.toString()}"></td>
            <td th:text="${result.flight.arrivalTime.getTime()}"></td>
             <td th:text="${result.totalCost}"></td>
         </tr>
